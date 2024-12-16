@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tidal Downloader</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Downloader for Premium Members</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="robots" content="noindex">
 </head>
 <body>
     <div class="container">
-        <h1>Tidal Downloader</h1>
-        <input type="text" id="track-url" placeholder="Enter Track URL">
-        <button onclick="download()">Download</button>
-        <div id="result"></div>
-        <p>Made for Liu Yuting with love.</p>
+        <h1>Downloader App</h1>
+        <form id="download-form">
+            <label for="clipboard-text">Paste your link below:</label>
+            <input type="text" id="clipboard-text" name="clipboard-text" required>
+            <button type="submit">Get Download URL</button>
+        </form>
+        <p id="status"></p>
+        <div class="download-button"></div> <!-- This is where the button will be added -->
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
