@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Downloader for Premium Members</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="styles.css">
     <meta name="robots" content="noindex">
+    <title>Made for Chrunos Premium Members with Love</title>
+    <style src="styles.css"></style>
+    
 </head>
 <body>
     <div class="container">
-        <h1>Downloader App</h1>
-        <form id="download-form">
-            <label for="clipboard-text">Paste your link below:</label>
-            <input type="text" id="clipboard-text" name="clipboard-text" required>
-            <button type="submit">Get Download URL</button>
-        </form>
-        <p id="status"></p>
-        <div class="download-button"></div> <!-- This is where the button will be added -->
+        <h1>Made for Chrunos Premium Members with Love</h1>
+        <input type="text" id="searchInput" placeholder="Enter search text or URL...">
+        <button id="searchButton" class="search">Search</button>
+        <ul id="resultList"></ul>
+        <div id="message" class="message" style="display: none;"></div>
+        
+        <div class="download-button"></div>
     </div>
+    <script src="script.js">       
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
